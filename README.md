@@ -20,3 +20,12 @@ Execute
 
 Running command With the database properly setup Start vagrant using vagrant up Log into vagrant using vagrant ssh change directory into folder containing recipe.py.  Type python recipe.py to run.   With the server now running you can open a browser and navigate to localhost:// to view the home page.  All database modifications require login with a google id.  
 
+# JSON APIs to view recipes
+All Recipes
+/recipes/JSON
+
+Individual User Recipes
+/recipes/<int:user_id>/JSON
+
+Recipes by type
+/recipes/<string:type>/JSON
